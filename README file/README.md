@@ -8,18 +8,23 @@ myenv\Scripts\activate
 # 2 To Deactivate Virtual Environment 
 deactivate
 
-# 3 Install requirements.txt file 
+# 3 Clone the YOLOv5 Repository
+cd /path/to/your/project
+git clone https://github.com/ultralytics/yolov5
+
+# 4 Install requirements.txt file 
+cd yolov5
 pip install -r requirements.txt
 
-# 4 To Download Dataset from Google (take from pinterest & other sources)
+# 5 To Download Dataset from Google (take from pinterest & other sources)
 run the file -> download_dataset.py
 
-# 5 Dataset Used - iot_dataset
+# 6 Dataset Used - iot_dataset
 # Recommend - Acquire own dataset rather than download_dataset due to less accuracy
 
 # NOTE: Change - "Path_to_your" to your respective paths of the files
 
-# 6 Train the Model - CPU (Run on GPU - given below)
+# 7 Train the Model - CPU (Run on GPU - given below)
 cd yolov5
 python train.py --img 640 --batch 16 --epochs 50 --data ../iot_dataset/data.yaml --weights yolov5s.pt --cache
 
@@ -56,7 +61,7 @@ python val.py --weights runs/train/exp/weights/best.pt --data ../iot_dataset/dat
 
 -> exp2 - more optimized model
 
-# 7 Test the Model
+# 8 Test the Model
 python detect.py --weights runs/train/exp/weights/best.pt --source ../iot_dataset/test/images --img 640 --conf 0.5
 
 # Test on GPU
@@ -68,7 +73,7 @@ python detect.py --weights runs/train/exp/weights/best.pt --source ../iot_datase
 
 # Test Results - Results saved to runs\detect\exp
 
-# 8 - Deploy - For Mobile Applications
+# 9 - Deploy - For Mobile Applications
 
 Deploying the Saved Model - To export your model
 
@@ -95,10 +100,10 @@ python export.py --weights runs/train/exp2/weights/best.pt --include torchscript
 
 ## Results saved to Path_to_your\Object Detection - IoT\yolov5\runs\train\exp\weights
 
-# 9 Test model on custom images
+# 10 Test model on custom images
 python detect.py --weights runs/train/exp/weights/best.pt --source path_to_test_images/ --img 640 --conf 0.5
 
-# 10 Build the Mobile Application for Deployment
+# 11 Build the Mobile Application for Deployment
 Coming Soon...
 
 # Note: 
