@@ -3,7 +3,7 @@ An object detection model using YOLOv5 to identify and classify IoT components l
 
 ## Instructions
 
-### Clone the Repository
+### Clone the Repository ###
 - cd path_to_your_project
 - clone the IoT_Object_Detection_YOLOv5 repo
 ```sh
