@@ -1,0 +1,13 @@
+train: ../iot_dataset/train/images
+val: ../iot_dataset/valid/images
+test: ../iot_dataset/test/images
+
+nc: 6
+names: ['Arduino', 'Capacitor', 'Jumper Wires', 'Resistor', 'Transistor', 'Ultrasonic Sensor']
+
+roboflow:
+  workspace: design-project-zeico
+  project: iot_dataset
+  version: 2
+  license: MIT
+  url: https://universe.roboflow.com/design-project-zeico/iot_dataset/dataset/2
