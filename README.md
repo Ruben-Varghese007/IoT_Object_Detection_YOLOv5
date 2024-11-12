@@ -1,5 +1,5 @@
 # IoT Object Detection using YOLOv5
-<span> An object detection model using YOLOv5 to identify and classify IoT components like sensors, microcontrollers, and hardware in real-time.</span>
+### An object detection model using YOLOv5 to identify and classify IoT components like sensors, microcontrollers, and hardware in real-time.
 
 ## Instructions
 
