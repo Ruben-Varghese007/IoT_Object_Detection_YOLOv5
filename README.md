@@ -8,9 +8,9 @@
   ```sh
   cd path_to_your_project
 - clone the **IoT_Object_Detection_YOLOv5** repo
-```sh
-git clone https://github.com/Ruben-Varghese007/IoT_Object_Detection_YOLOv5.git
-```
+  ```sh
+  git clone https://github.com/Ruben-Varghese007/IoT_Object_Detection_YOLOv5.git
+  ```
 
 ### To Start the Project from Scratch
 - All the instructions have been provided in the README file/README.md
