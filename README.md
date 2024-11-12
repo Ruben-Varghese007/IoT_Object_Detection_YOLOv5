@@ -5,6 +5,8 @@
 
 ### Clone the Repository (Terminal)
 - cd path_to_your_project
+  ```sh
+  cd path_to_your_project
 - clone the **IoT_Object_Detection_YOLOv5** repo
 ```sh
 git clone https://github.com/Ruben-Varghese007/IoT_Object_Detection_YOLOv5.git
